@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 메인 -->
+    <div class="container-top">
+        <div class="container-box"></div>
+            <input type="search" class="searchbox" name="search" placeholder="도시이름을 입력하세요" />
+            <a href="#" class="search"><i class="fas fa-search"></i></a>
+            <h1 class="city text-center">김포 운양동</h1>
+            <p class="now-date">
+                2021. 05. 17 13:00 
+            </p>
+            <p class="w-text">맑음</p>
+            <p class="temp">7&#8451;</p>
+            <div class="cloud-box">
+                <div class="w-icon1">
+                    <img src="images/icon/01d.png" alt="맑음">
+                </div>
+            </div>
+            <p class="text text-center">어제보다 5&#8451; 높아요</p>
+    <!-- 하단 박스 -->
+    <div class="container-bottom">
+            <div class="circle-box">
+                <div class="w-icon2">
+                    <img src="images/icon/01d.png" alt="맑음">
+                </div>
+            </div>
+            <!-- 메뉴 -->
+            <div class="bottom-box">
+                <a href="#" class="menu menu1">오늘날씨</a>
+                <a href="#" class="menu menu2">미세먼지</a>
+                <a href="#" class="menu menu3">시간별</a>
+                <a href="#" class="menu menu4">주간날씨</a>
+                <a href="#" class="menu menu5">일출/일몰</a>
+            </div>
+            <!-- 오늘 날씨 -->
+            <div class="today-box">
+                <div class="am text-center">
+                    <img src="images/icon/01d.png" alt="해">
+                    <p>오전</p>
+                    <p class="am-temp">18&#8451;</p>
+                </div>
+                <div class="pm text-center">
+                    <img src="images/icon/01n2.png" alt="달">
+                    <p>오후</p>
+                    <p class="pm-temp">25&#8451;</p>
+                </div>
+                <div class="all text-center">
+                    <h1>오늘의 날씨</h1>
+                    <div class="mini-dust">
+                        <div class="mini1">
+                            <h6>미세먼지</h6>
+                            <img src="images/thumb/f-good.png" alt="좋음">
+                            <p>좋음</p>
+                        </div>
+                        <div class="mini2">
+                            <h6>초미세먼지</h6>
+                            <img src="images/thumb/f-soso.png" alt="보통">
+                            <p>보통</p>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <div class="w1">
+                            <img src="images/thumb/w-humidity.png" alt="습도">
+                            <p class="p">25&#37;</p>
+                        </div>
+                        <div class="w2">
+                            <img class="img2" src="images/thumb/w-windy.png" alt="바람">
+                            <p class="p">2m/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 미세먼지 -->
+            <div class="dust-box none">
+                <div class="fine-dust text-center">
+                    <h6>미세먼지</h6>
+                    <img src="images/thumb/f-good.png" alt="좋음">
+                    <p>좋음</p>
+                    <span class="du1">10㎍/㎥</span>
+                </div>
+                <div class="ultrafine-particles text-center">
+                    <h6>초미세먼지</h6>
+                    <img src="images/thumb/f-soso.png" alt="보통">
+                    <p>보통</p>
+                    <span class="du2">58㎍/㎥</span>
+                </div>
+                <div class="ozone text-center">
+                    <h6>오존</h6>
+                    <img src="images/thumb/f-bad.png" alt="나쁨">
+                    <p>나쁨</p>
+                    <span class="du3">0.15ppm</span>
+                </div>
+                <div class="yellow-dust text-center">
+                    <h6>황사</h6>
+                    <img src="images/thumb/f-soso.png" alt="보통">
+                    <p>보통</p>
+                    <span class="du4">51㎍/㎥</span>
+                </div>
+            </div>
+            <!-- 시간별 날씨 -->
+            <div class="clock-box none">
+                <div class="clock-slick">
+                    <div class="clocks">
+                        <p class="c-clocks">06:00</p>
+                        <span class="wi wi-day-cloudy"></span>
+                        <p class="c-humidity">                          
+                            <img src="images/thumb/w-humidity_2.png" alt="습도">
+                            <span>10&#37;</span>
+                        </p>
+                        <p class="c-temps">7&#8451;</p>  
+                    </div>
+                    <div class="clocks">
+                        <p class="c-clocks">09:00</p>
+                        <span class="wi wi-day-sunny-overcast"></span>
+                        <p class="c-humidity">                          
+                            <img src="images/thumb/w-humidity_2.png" alt="습도">
+                            <span>10&#37;</span>
+                        </p>
+                        <p class="c-temps">7&#8451;</p>  
+                    </div>
+                    <div class="clocks">
+                        <p class="c-clocks">12:00</p>
+                        <span class="wi wi-day-sunny"></span>
+                        <p class="c-humidity">                          
+                            <img src="images/thumb/w-humidity_2.png" alt="습도">
+                            <span>10&#37;</span>
+                        </p>
+                        <p class="c-temps">7&#8451;</p>  
+                    </div>
+                    <div class="clocks">
+                        <p class="c-clocks">15:00</p>
+                        <span class="wi wi-day-sunny"></span>
+                        <p class="c-humidity">                          
+                            <img src="images/thumb/w-humidity_2.png" alt="습도">
+                            <span>10&#37;</span>
+                        </p>
+                        <p class="c-temps">7&#8451;</p>  
+                    </div>
+                    <div class="clocks">
+                        <p class="c-clocks">18:00</p>
+                        <span class="wi wi-night-clear"></span>
+                        <p class="c-humidity">                          
+                            <img src="images/thumb/w-humidity_2.png" alt="습도">
+                            <span>10&#37;</span>
+                        </p>
+                        <p class="c-temps">7&#8451;</p>  
+                    </div>
+                    <div class="clocks">
+                        <p class="c-clocks">21:00</p>
+                        <span class="wi wi-night-clear"></span>
+                        <p class="c-humidity">                          
+                            <img src="images/thumb/w-humidity_2.png" alt="습도">
+                            <span>10&#37;</span>
+                        </p>
+                        <p class="c-temps">7&#8451;</p>  
+                    </div>
+                    <div class="clocks">
+                        <p class="c-clocks">00:00</p>
+                        <span class="wi wi-night-alt-cloudy"></span>
+                        <p class="c-humidity">                          
+                            <img src="images/thumb/w-humidity_2.png" alt="습도">
+                            <span>10&#37;</span>
+                        </p>
+                        <p class="c-temps">7&#8451;</p>  
+                    </div>
+                </div>
+            </div>
+            <!-- 주간 날씨 -->
+            <div class="week slider none">
+                <div class="weekdays">
+                    <span class="sun">Sun</span><span>Mon</span><span>Tues</span><span>Wed</span>
+                    <span>Thurs</span><span>Fri</span><span class="sat">Sat</span>
+                </div>
+                <div id="weekslick">
+                    <div class="weathers">
+                        <!-- loop -->                    
+                        <div>
+                            <p class="w-date">1</p>
+                            <span class="wi wi-day-sunny"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">2</p>
+                            <span class="wi wi-day-sunny"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">3</p>
+                            <span class="wi wi-day-cloudy"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">4</p>
+                            <span class="wi wi-day-sunny"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">5</p>
+                            <span class="wi wi-day-sunny"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">6</p>
+                            <span class="wi wi-cloudy"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">7</p>
+                            <span class="wi wi-cloudy"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <!-- /loop/ -->   
+                    </div>
+                    <div class="weathers">
+                        <!-- loop -->                    
+                        <div>
+                            <p class="w-date">8</p>
+                            <span class="wi wi-rain"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div><p class="w-date">9</p>
+                            <span class="wi wi-lightning"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div><p class="w-date">10</p>
+                            <span class="wi wi-rain-mix"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div><p class="w-date">11</p>
+                            <span class="wi wi-cloudy-gusts"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">12</p>
+                            <span class="wi wi-cloud"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">13</p>
+                            <span class="wi wi-day-sunny"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">14</p>
+                            <span class="wi wi-day-sunny"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <!-- /loop/ -->   
+                    </div>
+                    <div class="weathers">
+                        <!-- loop -->                    
+                        <div>
+                            <p class="w-date">15</p>
+                            <span class="wi wi-day-sunny-overcast"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div><p class="w-date">16</p>
+                            <span class="wi wi-day-sunny"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div><p class="w-date">17</p>
+                            <span class="wi wi-day-cloudy"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div><p class="w-date">18</p>
+                            <span class="wi wi-thunderstorm"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">19</p>
+                            <span class="wi wi-day-sunny"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">20</p>
+                            <span class="wi wi-day-sunny"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <div>
+                            <p class="w-date">21</p>
+                            <span class="wi wi-cloudy"></span>
+                            <p class="f-temps">
+                                <span class="noon">19&#176;</span>
+                                <span class="night">25&#176;</span>
+                            </p>  
+                        </div>
+                        <!-- /loop/ -->   
+                    </div>
+                </div>  
+            </div>
+            <!-- 일출 / 일몰 -->
+            <div class="sunset-box none">
+                <div class="sunset">
+                    <p>일출 시간</p>
+                    <span class="wi wi-sunrise"></span>
+                    <p>AM<span class="s-clocks">6:00</span></p>
+                </div>
+                <div class="sunset2">
+                    <p>일몰 시간</p>
+                    <span class="wi wi-sunset"></span>
+                    <p>PM<span class="s-clocks">7:00</span></p>
+                </div>
+            </div>
+    </div>
+</div>
+    <!-- 로딩중 -->
+    <div class="loading display-none">
+        <div>
+            <img src="images/loading03.png">
+        </div>
+    </div>
+                <!-- <div class="content-box">
+                <ul class="ct-box">
+                    <li><label><span class="wi wi-thermometer-exterior"></span>최저온도</label>
+                        <span class="temp_min">123</span></li>
+                    <li><label><span class="wi wi-thermometer"></span>최고온도</label>
+                        <span class="temp_max">123</span></li>
+                    <li><label><span class="wi wi-sunrise"></span>해뜨는시간</label>
+                        <span class="sunrise">ddd</span></li>
+                    <li><label><span class="wi wi-sunset"></span>해지는시간</label>
+                        <span class="sunset">fdf</span></li>
+                    <li><label><span class="wi wi-windy"></span>바람</label>
+                        <span class="speed">fd</span></li>
+                    <li><label><span class="wi wi-humidity"></span>습도</label>
+                        <span class="humidity">fdf</span></li> 
+                </ul>
+            </div> -->
+<script src="js/plugin/jquery.min.js"></script>
+<script src="js/plugin/popper.min.js"></script>
+<script src="js/plugin/slick.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

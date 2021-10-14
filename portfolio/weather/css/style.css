@@ -1,0 +1,282 @@
+@import url('notosans.css');
+@import url('../bootstrap/css/bootstrap.min.css');
+@import url('reset.css');
+@import url('all.min.css');
+@import url('animate.min.css');
+@import url('weather-icons.css');
+@import url('weather-icons-wind.css');
+@import url('slick.css');
+@import url('slick-theme.css');
+
+.none{display:none;}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.loading{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.loading div{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:transparent;
+}
+.display-none{
+    display:none;
+}
+
+/* 메인 화면 */
+.container-top {
+    width:375px;
+    height:812px;
+    background-image: url(../images/background/b_afn_sunny.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow:hidden;
+}
+.container-box{
+    background-image: url(../images/background/b_cloud.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute; 
+    top:0;
+    left:0;
+    width:375px;
+    height:812px;
+    animation:move;
+    animation-duration:6s;
+    animation-iteration-count: infinite;
+}
+@keyframes move{
+    0%   {left:20px;}
+    50%  {left:-20px;}
+    100% {left:20px;}
+}
+input.searchbox{
+    background:transparent;
+    position:absolute;
+    top:1em;
+    right:2em;
+    height:2.5em;
+    border-radius:1.25em;
+    width:0;
+    border:none;
+    padding:.5em 2em;
+}
+input.searchbox:focus{
+    outline:none;
+}
+a.search {
+    font-size: 1.5em;
+    position: absolute;
+    color: #000;
+    top: 1em;
+    right: 2em;
+    z-index:2;
+}
+
+/* text */
+h1.city{
+    font-size: 2.3em;
+    font-weight: 700;
+    color:#000;
+    margin-top: 130px;
+    letter-spacing:3px;
+}
+.now-date {
+    text-align: center;
+    color: #000;
+    font-size: 1em;
+    margin-top: .5em;
+}
+.w-text{
+    font-size:20px;
+    margin-top:65px;
+    margin-left:102px;
+}
+.temp {
+    font-size: 2.5em;
+    font-weight: 700;
+    color:#000;
+    margin-top:15px;
+    margin-left:102px;
+}
+.cloud-box{
+    position: relative;
+}
+.w-icon1 img {
+    width: 105px;
+    position:absolute; left: 217px; bottom:-45px;
+}
+p.text {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-top:3em;
+    left: 102px;
+    position:absolute;
+    z-index:10;
+}
+/* -- 메인 화면 -- */
+
+/* 아래 부분 */
+.container-bottom {
+    width: 100%;
+    height:193px;
+    background-color:#fff;
+    position:relative;
+    top: 290px;
+    padding-top:20px;
+    padding-left:5px;
+}
+.circle-box{
+    background: #fff; 
+    width:136px; height:136px; 
+    border-radius: 100px; 
+    position: absolute; 
+    top:-100px;
+    right:-10px;
+}
+.w-icon2 img{
+    width: 105px;
+    position:absolute; 
+    left:15px; 
+    top:15px;
+    /* bottom:-45px; */
+    z-index:100;
+}
+
+/* 메뉴 */
+.bottom-box{position:relative;}
+.bottom-box a{
+    font-size:10.5px;
+    padding:5px 5px;
+    margin-top:3px;
+    color:#000;
+    font-weight:bold;
+    text-decoration: none;
+}
+.menu{
+    width:56px; height:25px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    background-color:#fff;
+    position:absolute;
+    top:-18px;
+    display:block;
+    text-align: center;
+    line-height:18px;
+    z-index: 10;
+}
+.menu1{left:-5px;}
+.menu2{left:43px;}
+.menu3{left:92px;}
+.menu4{left:140px;}
+.menu5{left:192px;}
+/* .up{top:-32px;} */
+
+
+/* 오늘 날씨 */
+.today-box{position:relative;}
+.am, .pm{width:75px; height:130px; float:left; position:absolute; top:25px; left:13px;}
+.today-box>.am::after{content:"/"; font-size:90px; font-weight:100; color:#aaa; float:left; position:absolute;
+    top:10px; left:75px;}
+.pm{position:absolute; left:140px; padding-top:1.5px;}
+.today-box img{width:75px; margin-bottom:3px;}
+.today-box p{font-size:13px; font-weight:bold; line-height:25px;}
+.am .am-temp{font-size:18px; color:#1680fa; font-weight:400;}
+.pm .pm-temp{font-size:18px; color:#ff1c1c; font-weight:400;}
+
+.all{width:130px; height:145px; float:left; position:absolute; top:15px; left:230px;}
+.mini-dust{width:100%; height:80px;}
+.mini-dust h1{font-weight:800; color:#565656;}
+.mini-dust h6{font-size:12px; font-weight:500; margin-bottom:5px;}
+.mini-dust p{line-height:15px;}
+.mini-dust img{width:25px;}
+.mini1, .mini2{float:left; margin-top:15px; margin-left:8px;}
+.mini2{margin-left:15px;}
+
+.other{width:100%; height:65px;}
+.other img{width:20px;}
+.other .img2{width:27px;}
+.w1{float:left; position:absolute; top:100px; left:10px;}
+.w1 .p{float:right; font-size:12px; color:#aee9fa; margin-left:3px; margin-top:10px;}
+.w2{float:left; position:absolute; top:110px; left:70px;}
+.w2 .p{float:right; font-size:12px; color:#39afff; margin-left:2px; margin-bottom:10px;}
+/* ---오늘 날씨--- */
+
+
+/* 미세먼지 */
+.dust-box{position:relative; padding:45px 25px;}
+.dust-box h6{font-size:12px; font-weight:600; margin-bottom:8px;}
+.dust-box img{width:30px;}
+.dust-box p{font-size:13px; font-weight:600; margin-bottom:5px;}
+.dust-box span{font-size:13px; font-weight:500; margin-bottom:5px;}
+.fine-dust {width:60px; height:60px; float:left; margin-right:25px;}
+.ultrafine-particles {width:60px; height:60px; float:left; margin-right:25px;}
+.ozone {width:60px; height:60px; float:left; margin-right:25px;}
+.yellow-dust {width:60px; height:60px; float:left;}
+/* ---미세먼지--- */
+
+
+
+/* 시간별 */
+.clock-box{margin-top:40px; width:100%; height:110px; overflow: hidden; }
+.clocks{width:40px; height:110px; text-align: center; float:left; margin-left:5px;}
+.clocks p{font-size:13px; font-weight:500; margin-bottom:10px;}
+.clocks .wi{font-size:28px; margin-bottom:5px;}
+.c-humidity{position: relative;}
+.c-humidity img{width:8px; position:absolute; left:15px;}
+.c-humidity span{color:#637df2; font-size:12px; position:absolute; top:1px; left:26px;}
+.c-temps{margin-top:18px;}
+/* ---시간별--- */
+
+
+
+/* 주간날씨 */
+.weekdays{margin-top:13px;}
+.weekdays span{font-size:10px; font-weight:500; margin-left:29px;}
+.weekdays span:first-child{margin-left:22px;}
+.sun{color:#ff1c1c;}
+.sat{color:#1680fa;}
+.weathers{width:380px; height:50px; margin-top:14px;}
+.weathers div{text-align:center; float:left; margin-left:11px;}
+.weathers div:first-child{margin-left:13px;}
+.weathers div:nth-child(3){margin-left:14px;}
+.weathers div:nth-child(4){margin-left:14px;}
+.weathers div:nth-child(5){margin-left:19px;}
+.weathers div:nth-child(6){margin-left:12px;}
+.weathers div:last-child{margin-left:7px;}
+.weathers .wi{font-size:22px; margin-bottom:5px;}
+.w-date{font-size:11px; font-weight: bold; color:#333; margin-bottom:5px;}
+.f-temps{font-size:10px; font-weight:500;}
+.noon{color:#1680fa;}
+.noon::after{content:'/'; font-size:11px; color:#333;}
+.night{color:#ff1c1c;}
+/* ---주간날씨--- */
+
+
+
+/* 일출/일몰 */
+.sunset-box{width:250px; text-align: center; margin-top:23px; margin-left:75px;}
+.sunset{float:left; margin-right:70px;}
+.sunset2{float:left;}
+.sunset p{font-size:18px; font-weight:500; color:#33A9F8; margin-bottom:25px;}
+.sunset>span{font-size:40px; margin-bottom:25px;}
+
+.sunset2 p{font-size:18px; font-weight:500; color:#FF7373; margin-bottom:25px;}
+.sunset2>span{font-size:40px; margin-bottom:25px;}
+/* ---일출/일몰--- */
+
