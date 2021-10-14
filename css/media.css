@@ -1,0 +1,270 @@
+@media screen and (max-width: 1220px){}
+@media screen and (max-width: 1024px){}
+@media screen and (max-width: 960px){}
+@media screen and (max-width: 760px){}
+@media screen and (max-width: 600px){}
+@media screen and (max-width: 480px){
+    /** 메인 **/
+    .main .introTitle {
+        width: 18vw;
+        left: 6vw; top:6vw;
+    }
+    .main .cloud6_1 {
+        width:70vw;
+        top:53vw;
+    }
+    .main .cloud6_2 {
+        width:70vw;
+        top:80vw;
+    }
+    .main .moon1 {
+        width:30%;
+        left:4vw; top:35vw;
+    }
+    .main .waveBack {
+        left: 0; bottom:10vw;
+        transform: translateY(100px);
+    }
+    .main .waveFront{
+        display:none;
+    }
+    .main .waveFront2 {
+        display:block;
+        opacity: 0;
+        position: absolute;
+        left: 0; bottom:1.5vw;
+        transform: translateY(100px);
+        z-index: 2;
+    }
+    .main .waveFront2.loading {
+        animation: waveFront 6s infinite linear;
+    }
+    .main .cloud1 {
+        width:135vw;
+        left: 5vw; bottom:-5vw;
+    }
+    .main .cloud3 {
+        opacity: 0;
+        position: absolute;
+        right: 10vw; bottom:-4vw;
+        transform: translateY(100px);
+        z-index:5;
+    }
+    .main .cloud3.loading {
+        animation: cloud3 15s infinite linear;
+    }
+
+    /* scroll */
+    .scrollStart{
+        width: 20%; height: 5vh;
+        right: 5vw; top:65vw;
+    }
+
+    /* About */
+    #about{
+        width:150vw; height: 100vh;
+    }
+    .about .talk {
+        width:48%;
+        left: 26vw; top:0vw;
+    }
+    .talk .aboutText {
+        width:48vw;
+        left: 59%; bottom:-8.5vw; 
+        font-size: 3vw;
+    }
+
+    /* 캐릭터 */
+    .character .mainCha1 {
+        width: 43vw;
+        left:-3vw; bottom:9vw;
+    }
+    .character .mainCha2 {
+        width: 33vw;
+        left: 31vw; bottom:7vw;
+    }
+
+    /* skills - skillsWrap */
+    #skills{
+        margin-top:69vw;
+    }
+    .skillsWrap .skillsTitle {
+        font-size:2.5vw;
+        width: 18vw;
+    }
+    .skillsWrap .skillsItem {
+        font-family: var(--font-eng);
+    }
+    .skillsWrap .skillsItem .itemName h3 {
+        font-size: 3vw;
+    }
+    .skillsWrap .skillsItem .itemPer h3 {
+        font-size: 5vw;
+        font-family: var(--font-kor);
+    }
+
+
+    /* site - intro */
+    #site1{display:none;}
+    #site2{display:block;}
+    .intro .slope {
+        left:0; top:50vw;
+    }
+    .intro .cloud1 {
+        right:40vw; top:45vw;
+    }
+    .intro .cloud2 {
+        right:30vw; top:70vw;
+    }
+    .intro .cloud3 {
+        right:10vw; top:95vw;
+    }
+    .intro .cloud4 {
+        width:21vw;
+        right:0vw; top:125vw;
+    }
+    .app{
+        top:4vw;
+        line-height:3vw;
+    }
+    .web-app{
+        top:5.5vw; left:0.5vw;
+    }
+    .fixed2 {
+        width: 100%; height:100vh;
+    }
+
+    /* last */
+    #last{display:none;}
+    #last2{display:block;}
+    .last .cloud {
+        position: absolute;
+        left:-0.2vw; top:110vw;
+    }
+    .last .moon {
+        position: absolute;
+        left:20vw; top:50vw;
+    }
+    .last .mountain {
+        position: absolute;
+        left:0vw; top:125vw;
+    }
+    .last .door {
+        width:28vw;
+        position: absolute;
+        left:35vw; top:115vw;
+    }
+    .last .grass {
+        position: absolute;
+        left:-2.2vw; top:142.5vw;
+    }
+
+    /* last-캐릭터 */
+    #ch2{display:none;}
+    #ch3{display:block;}
+    .character2{
+        position:fixed;
+        width: 1vw; height: 1vh;
+    }
+    .character2 .mainCha1 {
+        opacity: 0;
+        width: 25vw;
+        transform: translateY(300px);
+    }
+
+    /* Contact */
+    .contact .profile{
+        width:45%;
+        position:absolute;
+        top:30vw; left:5vw;
+    }
+    .profile p{
+        display:none;
+    }
+    .contact .bye{
+        width:25%;
+        position:absolute;
+        top:115vw; right:22vw;
+        font-family: var(--font-kor);
+        font-size:4vw;
+        margin-left:3vw;
+        color:#fff;
+        -ms-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+    .contact .bye p{
+        animation: shakeX 3s infinite alternate;
+    }
+    .cont{
+        font-size:7vw;
+        position:absolute;
+        top:8vw; left:5vw;
+    }
+    .last-p{
+        display:block;
+        font-family: var(--font-kor);
+        font-size:4.5vw;
+        color:#fff;
+        position:absolute;
+        top:33vw; right:10vw;
+    }
+    .call{
+        width:40%;
+        position:absolute;
+        top:48vw; right:5vw;
+    }
+    .call p{
+        font-family: var(--font-kor);
+        font-size:3vw;
+        margin-top:3vw;
+        margin-left:1.5vw;
+        color:#fff;
+    }
+    .blog{
+        width:38vw; height:7vw;
+        background-color:#316B82;
+        border-radius:10px;
+        margin-top:6vw;
+        margin-left:1.5vw;
+        padding-left:1vw;
+        text-align: center;
+    }
+    .blog:hover{
+        background-color:#689baf;
+    }
+    .blog a{
+        font-family: var(--font-kor);
+        font-size: 3.5vw;
+        line-height:7.5vw;
+        letter-spacing: 1.7vw;
+        color:#fff;
+    }
+    .insta{
+        width:38vw; height:7vw;
+        background-color:#316B82;
+        border-radius:10px;
+        margin-top:5vw;
+        margin-left:1.5vw;
+        padding-left:1vw;
+        text-align: center;
+    }
+    .insta a{
+        font-family: var(--font-kor);
+        font-size: 3.5vw;
+        line-height:7.5vw;
+        letter-spacing: 1vw;
+        color:#fff;
+    }
+    .insta:hover{
+        background-color:#689baf;
+    }
+    .copy{
+        display:block;
+        /* font-family: var(--font-kor); */
+        font-size:3vw;
+        text-align: center;
+        color:#fff;
+        margin-top:155vw;
+    }
+}
+@media screen and (max-width: 320px){}
