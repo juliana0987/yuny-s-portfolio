@@ -1,0 +1,478 @@
+@import url('notosans.css');
+@import url('../bootstrap/css/bootstrap.min.css');
+@import url('reset.css');
+@import url('all.min.css');
+@import url('animate.min.css');
+@import url('slick.css');
+@import url('slick-theme.css');
+
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.center{
+    text-align: center;
+}
+.heartbox{
+    text-align: center;
+    margin-top:100px;
+}
+.heartbox2{
+    text-align: center;
+    margin-top:190px;
+}
+
+
+/*** header ***/
+.open{
+    width:100%; min-height:15px;
+    position:fixed; top:0; 
+    text-align: center;
+    z-index:100;
+    color:#ddd;
+    font-size: 18px;
+    background-color: #50729B;
+    border-radius: 0;
+    display:block;
+}
+#header{
+    position:fixed; top:0; 
+    width:100%; min-height:150px;
+    background-color: #50729B;
+    padding-left:350px;
+    z-index:120;
+    display:none;
+}
+#header li{
+    float:left;
+    width:15%;
+    text-align: center;
+    line-height: 150px;
+}
+#header a{
+    color:#fff;
+    font-size: 25px;
+}
+.close{
+    position:absolute;
+    text-align: center;
+    color:#fff;
+    font-size:50px;
+    line-height: 140px;
+}
+
+/*** 메인 ***/
+#main {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top:220px;
+}
+.date-box {
+    width: 25px;
+    position: absolute;
+    top: -50px;
+    left: 28px;
+}
+.top_date_icon {
+    width: 25px;
+}
+.top_month {
+    font-size: 22px;
+    margin-top: 10px;
+}
+.top_xie {
+    width: 12px;
+    margin-top: 8px;
+}
+.top_day {
+    font-size: 22px;
+    margin-top: 8px;
+}
+.main {
+    margin-top: 80px;
+}
+.m_1 {
+    width: 100%;
+    margin-top: 80px;
+}
+.main_img {
+    width: 100%;
+    position: relative;
+}
+.main_img_bg {
+    position: absolute;
+    width: 60vw;
+    top: -5vw;
+    right: 0;
+}
+.main_text {
+    margin-top: 30px;
+}
+.mt_1 {
+    font-size: 22px;
+    color: #000;
+    margin-top: 30px;
+}
+.mt_2 {
+    font-size: 18px;
+    color: #505050;
+    margin-top: 25px;
+}
+.mt_2>div {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #505050;
+}
+
+/*** gallery ***/
+.title_tab {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-bottom: 1px solid #2c2c2c;
+    padding-bottom: 10px;
+    position: relative;
+}
+/* .gt_tab{width:30px;} */
+.gt_tab2 {
+    width: 117px;
+    position: absolute;
+    top: -15px;
+    right: 5px;
+}
+
+/* 큰사진 */
+#gallery {
+    width: 100%;
+    height: 1400px;
+    padding-top: 4em;
+    background: #50729B;
+    margin-top: 30px;
+}
+#g1 {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 80px;
+    position: relative;
+}
+#g2 {
+    max-width: 540px;
+    margin: 0 auto;
+    position: relative;
+}
+#g3 {
+    margin: 0 auto;
+    width: 100%;
+}
+#gslide {
+    width: 100%;
+    max-height: 810px;
+    position: relative;
+}
+.gslide>img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 버튼 */
+.full_s {
+    position: absolute;
+    top: 2px;
+    right: -35px;
+    width: 44px;
+    height: 44px;
+    z-index: 22;
+    display: block;
+    background-color: #000;
+    padding: 2px;
+}
+.full_s span {
+    color: #fff;
+    font-size: 40px;
+}
+.full_s2 {
+    position: absolute;
+    top: 2px;
+    right: -35px;
+    width: 44px;
+    height: 44px;
+    z-index: 22;
+    display: block;
+    background-color: #000;
+    padding: 2px;
+}
+.full_s2 span {
+    color: #fff;
+    font-size: 40px;
+}
+.left, .left2 {
+    position: absolute;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    z-index: 30;
+    display: block;
+    background-color: #000;
+    padding: 2px;
+    top: 20vw;
+    cursor: pointer;
+}
+.left span, .left2 span{
+    color: #fff;
+    font-size: 40px;
+}
+.right, .right2 {
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 40px;
+    z-index: 30;
+    display: block;
+    background-color: #000;
+    padding: 2px;
+    top: 20vw;
+    cursor: pointer;
+}
+.right span, .right2 span {
+    color: #fff;
+    font-size: 40px;
+}
+
+/* modal */
+.modal{
+    position:fixed; 
+    z-index:100; 
+    padding-top:50px; 
+    left:0; top:0; 
+    width:100%; height:100%; 
+    overflow:auto; 
+    background:rgba(0,0,0,0.7); 
+    display:none;
+}
+.modal #gslide{
+    width:50%;
+    margin:0 auto;
+    position: relative;
+}
+.modal #gslide .gslide2 img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.modal #gslide .gslide2 .left2 {
+    top: 38vw;
+}
+.modal #gslide .gslide2 .right2 {
+    top: 38vw;
+}
+
+/* 영상 */
+#movie {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -250px;
+}
+.m_title {
+    width: 100%;
+    min-height: 50px;
+    background: #3c3c3c;
+    color: #fff;
+    font-size: 35px;
+    line-height: 48px;
+    padding-left: 10px;
+}
+.video-p {
+    width: 100%;
+    position: relative;
+}
+.video-p img {
+    width: 100%;
+}
+.player_btn {
+    width: 5%;
+    position: absolute;
+    top: 45%;
+    left: 47%;
+}
+.m_bottom {
+    width: 100%;
+    min-height: 50px;
+    background: #3c3c3c;
+    color: #fff;
+    font-size: 35px;
+    line-height: 43px;
+    padding-left: 10px;
+}
+.m_bottom span {
+    vertical-align: middle;
+    font-size: 1.8vw;
+}
+
+/* invitation */
+.title_tab2 {
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-bottom: 1px solid #2c2c2c;
+    padding-bottom: 10px;
+    position: relative;
+}
+.title_tab2 .invit {
+    width: 85px;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+#invite{
+    width: 100%;
+    max-height: 1020px;
+    padding-top: 4em;
+    background: #50729B;
+    margin-top: 30px;
+}
+#invite-box{
+    width:45%;
+    height: 850px;
+    text-align: center;
+    background:#fff;
+    margin: 30px auto;
+    padding:80px;
+}
+.title-name{
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size:28px;
+    font-weight: bold;
+    word-spacing:8px;
+}
+#invite-box .text{
+    margin-top:80px;
+    font-family:'나눔고딕';
+    font-size:23px;
+    line-height:60px;
+}
+#invite-box .text-name{
+    margin-top:80px;
+    font-size:28px;
+    line-height:60px;
+    font-weight: bold;
+}
+.text-name span{
+    font-size:25px;
+    font-weight:500;
+}
+#invite .invite-date{
+    width:45%; height:120px;
+    background-color: #3c3c3c;
+    text-align: center;
+    padding-top:20px;
+    margin:-80px auto;
+    color:#fff;
+    font-size: 23px;
+    font-weight: bold;
+    line-height:40px;
+}
+
+/* contant */
+#contact{
+    margin-top:200px;
+    text-align: center;
+}
+#contact h1{
+    font-size:30px;
+    font-weight: bold;
+    margin-top:10px;
+}
+#contact .cont-box{
+    width:40%; min-height:150px;
+    background-color:rgb(255, 250, 227);
+    margin:30px auto;
+    border:1px dashed #505050;
+    padding-top:35px;
+}
+#contact .cont-box p{
+    font-size:22px;
+    font-weight: 500;
+    line-height:40px;
+}
+.phone{
+    width:40%; min-height:130px;
+    margin:50px auto;
+}
+.groom{
+    width:50%;
+    float:left;
+    position:relative;
+}
+.g-box{
+    width:99%;
+    cursor: pointer;
+}
+.g-box img{width:100%;}
+.bride{
+    width:50%;
+    float:right;
+    position:relative;
+}
+
+
+/* location */
+#location{margin-top: 200px;}
+.title_tab3 {
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    border-bottom: 1px solid #2c2c2c;
+    padding-bottom: 10px;
+    position: relative;
+}
+.title_tab3 .locate {
+    width: 70px;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+#map {
+    width: 70%; min-height:40vw;
+    margin: 0 auto;
+    margin-top:130px;
+}
+.map-box{
+    width: 70%; min-height:25vw;
+    margin: 0 auto;
+    /* margin-top:130px; */
+    background:#ddd;
+    padding:30px 50px;
+}
+.map-box .text:first-child{
+    margin-top:0;
+}
+.map-box .text{
+    margin-top:20px;
+    line-height:25px;
+}
+.map-box .text h2{
+    font-size:20px;
+    font-weight: bold;
+}
+
+/* footer */
+footer{
+    width:100%; min-height:8vw;
+    text-align: center;
+    background-color: #50729B;
+}
+footer .copy{
+    line-height:8vw;
+    color:#fff;
+    font-size: 20px;
+}

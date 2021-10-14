@@ -1,0 +1,244 @@
+@media screen and (max-width: 1220px){
+    /*** header ***/
+    #header{min-height:130px; padding-left:150px;}
+    #header li{line-height: 130px; width:16.6%;}
+    .close{line-height: 120px; font-size:45px;}
+
+    /* 이미지 */
+    .left {top: 32vw;}
+    .right {top: 32vw;}
+    .modal{padding-top:0;}
+
+    /* contact */
+    .phone{width:50%;}
+}
+@media screen and (max-width: 1024px){
+    /* 이미지 */
+    .left {top: 38vw;}
+    .right {top: 38vw;}
+    .modal{padding-top:60px;}
+
+    /* invitation */
+    #invite{min-height: 850px;}
+    #invite-box{height: 650px; padding:50px;}
+    .title-name{font-size:25px;}
+    #invite-box .text{margin-top:40px; font-size:20px; line-height:50px;}
+    #invite-box .text-name{margin-top:40px; font-size:25px; line-height:50px;}
+    .text-name span{font-size:22px; font-weight:500;}
+    #invite .invite-date{font-size: 22px;}
+
+    /* contact */
+    .phone{width:60%;}
+
+    /* footer */
+    footer{min-height:12vw;}
+    footer .copy{line-height:12vw;}
+}
+@media screen and (max-width: 960px){
+    /*** header ***/
+    #header{min-height:130px; padding-left:120px;}
+    #header a{font-size: 20px;}
+
+    /* 이미지 */
+    .left {top: 40vw;}
+    .right {top: 40vw;}
+    .modal{padding-top:10px;}
+    .modal #gslide{width:60%;}
+}
+@media screen and (max-width: 760px){
+    /*** header ***/
+    #header{min-height:110px; padding-left:90px;}
+    #header li{line-height: 110px; width:16.6%;}
+    #header a{font-size: 19px;}
+    .close{line-height: 100px; font-size:45px;}
+    
+    /* 이미지 */
+    .left {top: 49vw;}
+    .right {top: 49vw;}
+    .modal{padding-top:50px;}
+    .modal #gslide{width:70%;}
+    .modal #gslide .gslide2 .left2 {top: 45vw;}
+    .modal #gslide .gslide2 .right2 {top: 45vw;}
+
+    /* 영상 */
+    .m_title {font-size: 28px;}
+    .m_bottom {font-size: 28px; line-height: 45px;}
+    .m_bottom span {font-size: 3vw;}
+    
+    /* invitation */
+    #invite{min-height: 850px;}
+    #invite-box{width:60%; height: 650px; padding:50px;}
+    .title-name{font-size:25px;}
+    #invite-box .text{margin-top:40px; font-size:20px; line-height:50px;}
+    #invite-box .text-name{margin-top:40px; font-size:25px; line-height:50px;}
+    .text-name span{font-size:22px; font-weight:500;}
+    #invite .invite-date{width:60%; font-size: 22px;}
+    
+    /* contact */
+    #contact .cont-box{width:55%;}
+    .phone{width:80%;}
+
+    /* location */
+    #map{width: 80%; min-height:50vw; margin-top:80px;}
+    .map-box{width: 80%;}
+}
+@media screen and (max-width: 600px){
+    /*** header ***/
+    #header{min-height:90px; padding-left:50px;}
+    #header li{line-height: 90px; width:16.6%;}
+    #header a{font-size: 16px;}
+    .close{line-height: 80px; font-size:40px; position:absolute; right:30px;}
+
+    /* 이미지 */
+    #gallery {height: 1200px;}
+    .left {top: 50vw;}
+    .right {top: 50vw;}
+    .modal{padding-top:100px;}
+    .modal #gslide{width:80%;}
+    .modal #gslide .gslide2 .left2 {top: 55vw;}
+    .modal #gslide .gslide2 .right2 {top: 55vw;}
+
+
+    /* 영상 */
+    .m_title {font-size: 25px;}
+    .m_bottom {font-size: 25px; line-height: 45px;}
+    .m_bottom span {font-size: 4vw;}
+    
+    /* invitation */
+    #invite{min-height: 850px;}
+    #invite-box{width:75%; height: 650px; padding:50px;}
+    #invite .invite-date{width:75%; font-size: 22px;}
+    
+    /* contact */
+    #contact .cont-box{width:75%;}
+    .phone{width:80%; min-height:85px;}
+    .groom .p-box{width:30%; min-height:49px;}
+    .groom .p-box span{font-size:35px; line-height:80px;}
+    .g-box p{font-size:17px;}
+    .bride .p-box{width:30%; min-height:49px;}
+    .bride .p-box span{font-size:35px; line-height:80px;}
+
+    /* location */
+    #map{width: 80%; min-height:50vw; margin-top:80px;}
+    .map-box{width: 80%;}
+    .map-box .text{font-size:13px;}
+    .map-box .text h2{font-size:18px;}
+
+    /* footer */
+    footer{min-height:13vw;}
+    footer .copy{line-height:13vw;}
+}
+@media screen and (max-width: 480px){
+    /*** header ***/
+    #header{min-height:80px; padding-left:50px;}
+    #header li{line-height:80px; width:16.6%;}
+    #header a{font-size: 13px;}
+    .close{line-height: 70px; font-size:30px; position:absolute; right:30px;}
+
+    /* 이미지 */
+    #gallery {height: 1000px;}
+    .modal{padding-top:130px;}
+    .slick-dots{bottom: -35px;}
+    .slick-dots li{margin: 0 4px;}
+    .slick-dots li button{font-size:7px;}
+    .slick-dots li button:before{font-size:7px;}
+
+    /* 영상 */
+    .m_title {font-size: 22px;}
+    .m_bottom {font-size: 22px;}
+
+    /* invitation */
+    #invite{min-height: 760px; padding-top:1.5em;}
+    #invite-box{width:75%; height: 600px; padding:40px 20px;}
+    .title-name{font-size:22px;}
+    #invite-box .text{font-size:17px; line-height:47px;}
+    #invite-box .text-name{margin-top:35px; font-size:20px;}
+    .text-name span{font-size:18px;}
+    #invite .invite-date{font-size: 20px;}
+
+    /* contact */
+    #contact{margin-top:100px;}
+    #contact .cont-box p{font-size:19px;}
+    .groom .p-box{min-height:40px;}
+    .groom .p-box span{line-height:67px;}
+    .bride .p-box{min-height:49px;}
+    .bride .p-box span{line-height:67px;}
+    .g-box h2{font-size:12px;}
+    .g-box p{font-size:13px;}
+
+    /* location */
+    #map{width: 90%; min-height:50vw; margin-top:80px;}
+    .map-box{width: 90%; padding:25px 30px;}
+    .map-box .text{font-size:13px;}
+    .map-box .text h2{font-size:18px;}
+
+    /* footer */
+    footer{min-height:12vw;}
+    footer .copy{line-height:12vw; font-size:17px;}
+}
+@media screen and (max-width: 420px){
+    /*** header ***/
+    #header{min-height:70px; padding-left:35px;}
+    #header li{line-height:70px; width:16.6%;}
+    #header a{font-size: 11px;}
+    .close{line-height: 70px; font-size:25px; position:absolute; right:25px;}
+
+    /* 이미지 */
+    #gallery {height: 1000px;}
+    .modal{padding-top:130px;}
+    .modal #gslide .gslide2 .left2 {left:-38px;}
+    .modal #gslide .gslide2 .right2 {right:-38px;}
+    .slick-dots{bottom: -30px;}
+    .slick-dots li{margin: 0 -1px;}
+    .slick-dots li button{font-size:5px;}
+    .slick-dots li button:before{font-size:5px;}
+
+    /* contact */
+    #contact .cont-box{width:85%;}
+    #contact .cont-box p{font-size:17px;}
+    .phone{width:95%; min-height:70px;}
+    .groom .p-box{width:30%; min-height:40px;}
+    .groom .p-box span{font-size:30px; line-height:55px;}
+    .g-box h2{font-size:12px;}
+    .g-box p{font-size:13px;}
+    .bride .p-box{width:30%; min-height:40px;}
+    .bride .p-box span{font-size:30px; line-height:55px;}    
+}
+@media screen and (max-width: 320px){
+    /* 이미지 */
+    .left{top:28vw;}
+    .right{top:28vw;}
+    .slick-dots{bottom: -30px;}
+    .slick-dots li{margin: 0 -3px;}
+    .slick-dots li button{font-size:5px;}
+    .slick-dots li button:before{font-size:5px;}
+
+    /* invitation */
+    #invite{min-height: 740px; padding-top:1.5em;}
+    #invite-box{width:90%; height: 580px; padding:40px 20px;}
+    .title-name{font-size:18px;}
+    #invite-box .text{font-size:14px; line-height:45px;}
+    #invite-box .text-name{margin-top:35px; font-size:17px;}
+    .text-name span{font-size:15px;}
+    #invite .invite-date{width:80%; font-size: 16px;}   
+
+    /* contact */
+    #contact .cont-box{width:80%;}
+    #contact .cont-box p{font-size:17px;}
+    .phone{width:95%; min-height:70px;}
+    .groom .p-box{width:30%; min-height:40px;}
+    .groom .p-box span{font-size:30px; line-height:55px;}
+    .g-box h2{font-size:10px;}
+    .g-box p{font-size:11px;}
+    .bride .p-box{width:30%; min-height:40px;}
+    .bride .p-box span{font-size:30px; line-height:55px;}
+
+    /* location */
+    .map-box{width: 90%; padding:25px 20px;}
+    .map-box .text{font-size:12px;}
+    .map-box .text h2{font-size:16px;}
+
+    /* footer */
+    footer{min-height:19vw;}
+    footer .copy{line-height:19vw; font-size:15px;}
+}
